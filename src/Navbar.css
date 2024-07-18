@@ -1,0 +1,60 @@
+/* Navbar.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Create scrolling effect */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(87, 143, 163, 0.8); /* Add transparency */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    height: 80px; /* Increased height */
+}
+
+.navbar.scrolled {
+    background-color: rgba(62, 38, 38, 0.8);
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Increased spacing between items */
+}
+
+.nav-item {
+    margin: 0 15px; /* Increased margin */
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px; /* Increased padding */
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px; /* Increased font size */
+}
+
+.nav-item a:hover {
+    background-color: #555;
+    color: #ffdd57;
+    font-style: italic;  
+    font-weight: bold;
+}
+
+.nav-item.active a {
+    background-color: rgb(130, 130, 90); /* Highlight active item */
+    color: black;
+    font-weight: bold;
+    font-family: cursive;
+}
